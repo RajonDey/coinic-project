@@ -1,10 +1,10 @@
 const Form = () => {
   return (
     <div
-      className="py-12 md:py-20 sm:w-96 w-full flex flex-col justify-center items-center mx-auto relative"
+      className="py-12 md:py-20 sm:w-96 w-full flex flex-col justify-center items-center mx-auto relative z-10"
       id="form"
     >
-      <div class="absolute -z-2 top-[50%] -right-[500px] w-96 h-96 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+      <div class="absolute -z-2 top-[50%] -right-[200px] w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
       <div className="mb-12 text-center">
         <h2 class="text-3xl sm:text-5xl text-white text-gradient py-1">
           Title goes here
@@ -40,7 +40,7 @@ const Form = () => {
       />
       <button
         type="button"
-        className="btn-grad-transparent text-dark hover:text-white w-full mt-2 border-[1px] p-2 border-[#dddddd] hover:bg-[#2546bd] rounded-full cursor-pointer"
+        className="btn-grad text-white w-full mt-2 border-[1px] p-2 border-[#dddddd] rounded-full cursor-pointer"
       >
         Send now
       </button>
