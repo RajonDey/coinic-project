@@ -3,14 +3,14 @@ import { FcOvertime } from "react-icons/fc";
 
 const Transactions = () => {
   return (
-    <div className="py-12 md:py-20 w-full flex flex-col justify-center items-center mx-auto">
-      <div className="mb-12 text-center w-full">
+    <div className="py-12 md:py-20 max-w-[80%] flex flex-col justify-center items-center mx-auto">
+      <div className="mb-12 text-center">
         <h2 class="text-3xl sm:text-5xl text-white text-gradient py-1">
           Latest Transactions
         </h2>
 
-        <div className="flex flex-col md:flex-row p-10 px-16 items-center text-center justify-between">
-          <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col lg:flex-row p-10 px-16 items-center text-center justify-between">
+          <div className="flex flex-col items-center justify-center mx-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <img
@@ -36,7 +36,7 @@ const Transactions = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center mx-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <img
@@ -62,7 +62,7 @@ const Transactions = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center mx-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <img
@@ -88,7 +88,7 @@ const Transactions = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center mx-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <img
