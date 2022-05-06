@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0; // solidity version 
+pragma solidity ^0.8.10; // solidity version 
 
 contract Transactions {
     uint256 transactionCount; 
