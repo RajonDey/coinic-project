@@ -5,7 +5,7 @@ const Transactions = () => {
   return (
     <div className="py-12 md:py-20 max-w-[80%] flex flex-col justify-center items-center mx-auto">
       <div className="mb-12 text-center">
-        <h2 class="text-3xl sm:text-5xl text-white text-gradient py-1">
+        <h2 className="text-3xl sm:text-5xl text-white text-gradient py-1">
           Latest Transactions
         </h2>
 

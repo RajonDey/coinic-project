@@ -9,8 +9,8 @@ const Features = () => {
       className="flex items-center justify-center max-w-[100%] lg:max-w-[80%] mx-auto relative"
       id="features"
     >
-      <div class="absolute -top-[50px] right-[0px] w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
-      <div class="absolute top-[50px] left-[0px] w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
+      <div className="absolute -top-[50px] right-[0px] w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
+      <div className="absolute top-[50px] left-[0px] w-96 h-96 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-blob"></div>
 
       <div className="shadow-md m-8 shadow-xl rounded-xl w-full glassmorphism">
         <div className="flex flex-col md:flex-row p-10 px-16 py-[60px] items-center text-center justify-between">

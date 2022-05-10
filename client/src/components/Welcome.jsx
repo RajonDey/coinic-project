@@ -1,9 +1,14 @@
 import React, { useContext } from "react";
+
 import { FcDown } from "react-icons/fc";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 
+import { TransactionContext } from "../context/TransactionContext";
+
 const Welcome = () => {
+  const { connectWallet } = useContext(TransactionContext);
+
   return (
     <div className="flex mf:flex-row flex-col md:flex-row items-center justify-between md:py-20 py-12 px-2 max-w-7xl mx-auto mt-20">
       <div className="flex flex-1 justify-start flex-col mf:mr-10">
@@ -15,8 +20,12 @@ const Welcome = () => {
           Krypto.
         </p>
         <div className="flex flex-col sm:flex-row justify-start mt-8">
-          <button className="btn-grad px-3 py-2 rounded-full text-sm font-medium mt-2 text-center text-white w-40">
-            Connect Wallet
+          <button
+            type="button"
+            onClick={connectWallet}
+            className="btn-grad px-3 py-2 rounded-full text-sm font-medium mt-2 text-center text-white w-40"
+          >
+            Connect Wallet-
           </button>
           <a
             href="#form"
@@ -36,7 +45,7 @@ const Welcome = () => {
       </div>
 
       <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 relative">
-        <div class="absolute -top-[100px] right-[0px] w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
+        <div className="absolute -top-[100px] right-[0px] w-96 h-96 bg-orange-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob"></div>
 
         <div className="p-3 flex justify-end items-start flex-col rounded-xl h-[200px] sm:w-80 w-full my-5 eth-card">
           <div className="flex justify-between flex-col w-full h-full">
