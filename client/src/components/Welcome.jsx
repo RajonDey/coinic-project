@@ -4,10 +4,11 @@ import { FcDown } from "react-icons/fc";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 
+import { shortenAddress } from "../utils/shortenAddress";
 import { TransactionContext } from "../context/TransactionContext";
 
 const Welcome = () => {
-  const { connectWallet } = useContext(TransactionContext);
+  const { connectWallet, currentAccount } = useContext(TransactionContext);
 
   return (
     <div className="flex mf:flex-row flex-col md:flex-row items-center justify-between md:py-20 py-12 px-2 max-w-7xl mx-auto mt-20">
@@ -20,13 +21,15 @@ const Welcome = () => {
           Krypto.
         </p>
         <div className="flex flex-col sm:flex-row justify-start mt-8">
-          <button
-            type="button"
-            onClick={connectWallet}
-            className="btn-grad px-3 py-2 rounded-full text-sm font-medium mt-2 text-center text-white w-40"
-          >
-            Connect Wallet-
-          </button>
+          {!currentAccount && (
+            <button
+              type="button"
+              onClick={connectWallet}
+              className="btn-grad px-3 py-2 rounded-full text-sm font-medium mt-2 text-center text-white w-40"
+            >
+              Connect Wallet
+            </button>
+          )}
           <a
             href="#form"
             className="text-center btn-grad-transparent text-black hover:text-white px-3 py-2 sm:ml-3 mt-2 rounded-full text-sm font-medium border border-[#777777] w-40"
@@ -56,7 +59,9 @@ const Welcome = () => {
               <BsInfoCircle fontSize={17} color="#fff" />
             </div>
             <div>
-              <p className="text-white font-light text-sm">....</p>
+              <p className="text-white font-light text-sm">
+                Adress: {shortenAddress(currentAccount)}
+              </p>
               <p className="text-white font-semibold text-lg mt-1">Ethereum</p>
             </div>
           </div>
