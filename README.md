@@ -8,6 +8,7 @@ Anyway, it's so much fun doing this, though pretty complex but at the same time 
 Using the following technolgies to build this amazing project:
 - React
 - Tailwind
+- Solidity
 - Alchemy
 - Hardhat
 - Ghiphy 
